@@ -7,6 +7,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.CalculatorController">
    <columnConstraints>
@@ -18,7 +19,10 @@
    <children>
       <AnchorPane prefHeight="140.0" prefWidth="284.0" style="-fx-background-color: black;">
          <children>
-            <Label fx:id="MonitorLabel" alignment="CENTER_RIGHT" layoutX="5.0" layoutY="14.0" prefHeight="52.0" prefWidth="274.0" textFill="#09ff3f" />
+            <Label fx:id="MonitorLabel" alignment="CENTER_RIGHT" layoutX="5.0" layoutY="14.0" prefHeight="52.0" prefWidth="274.0" textFill="#09ff3f">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
             <Button fx:id="Btn7" layoutY="82.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="7" />
             <Button fx:id="Btn4" layoutY="134.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="4" />
             <Button fx:id="Btn1" layoutY="186.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="1" />

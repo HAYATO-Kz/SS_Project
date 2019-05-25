@@ -1,7 +1,11 @@
-Calculator Application
+<H1>Calculator Application</H1><br>
     Application that use to calculate
 
-Design Pattern that used in Project
+![calculator](/Calculator.png)
+
+
+<H1>Design Pattern that used in Project<H1/>
+
 
 __Singleton Design Pattern__<br>
 ![Singelton](/DesignPatternUML/Singleton.png)
