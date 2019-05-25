@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.CalculatorController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="140.0" prefWidth="284.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="MonitorLabel" alignment="CENTER_RIGHT" layoutX="5.0" layoutY="14.0" prefHeight="52.0" prefWidth="274.0" textFill="#09ff3f" />
+            <Button fx:id="Btn7" layoutY="82.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="7" />
+            <Button fx:id="Btn4" layoutY="134.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="4" />
+            <Button fx:id="Btn1" layoutY="186.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="1" />
+            <Button fx:id="RestBtn" layoutY="238.0" mnemonicParsing="false" onAction="#handleResetBtn" prefHeight="52.0" prefWidth="71.0" text="C" />
+            <Button fx:id="Btn5" layoutX="71.0" layoutY="134.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="5" />
+            <Button fx:id="Btn6" layoutX="142.0" layoutY="134.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="6" />
+            <Button fx:id="BtnMinus" layoutX="213.0" layoutY="134.0" mnemonicParsing="false" onAction="#handleMinus" prefHeight="52.0" prefWidth="71.0" text="-" />
+            <Button fx:id="Btn2" layoutX="71.0" layoutY="186.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="2" />
+            <Button fx:id="Btn3" layoutX="142.0" layoutY="186.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="3" />
+            <Button fx:id="BtnMultiply" layoutX="213.0" layoutY="186.0" mnemonicParsing="false" onAction="#handleMultiply" prefHeight="52.0" prefWidth="71.0" text="x" />
+            <Button fx:id="BtnDot" layoutX="142.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="." />
+            <Button fx:id="BtnDivide" layoutX="213.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleDivide" prefHeight="52.0" prefWidth="71.0" text="/" />
+            <Button fx:id="Btn8" layoutX="71.0" layoutY="82.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="8" />
+            <Button fx:id="Btn9" layoutX="142.0" layoutY="82.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="9" />
+            <Button fx:id="BtnPlus" layoutX="213.0" layoutY="82.0" mnemonicParsing="false" onAction="#handlePlus" prefHeight="52.0" prefWidth="71.0" text="+" />
+            <Button fx:id="BtnSaveANS" layoutY="290.0" mnemonicParsing="false" onAction="#handleSaveBtn" prefHeight="52.0" prefWidth="71.0" text="save" />
+            <Button fx:id="BtnRestoreANS" layoutX="71.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleRestoreBtn" prefHeight="52.0" prefWidth="71.0" text="ANS" />
+            <Button fx:id="Btn0" layoutX="71.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleNumberBtn" prefHeight="52.0" prefWidth="71.0" text="0" />
+            <Button fx:id="BtnANS" layoutX="142.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleGetANSBtn" prefHeight="52.0" prefWidth="141.0" text="=" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="H_RESIZE" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</GridPane>
