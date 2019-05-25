@@ -34,51 +34,34 @@ public class CalculatorController {
     private Calculator.Momento m ;
     private boolean getAns = false;
 
-    public void handlePlus(ActionEvent e){
+    public void doFunction(){
         if(MonitorLabel.getText().equals("")){
             return;
         }
         if(getAns){
             getAns = false;
         }
-        calculator.doSomething(MonitorLabel.getText());
+        calculator.doFunction(MonitorLabel.getText());
         MonitorLabel.setText(calculator.getAnswer());
+    }
+
+    public void handlePlus(ActionEvent e){
+        doFunction();
         calculator.serFunction(new PlusFunction());
     }
 
     public void handleMinus(ActionEvent e){
-        if(MonitorLabel.getText().equals("")){
-            return;
-        }
-        if(getAns){
-            getAns = false;
-        }
-        calculator.doSomething(MonitorLabel.getText());
-        MonitorLabel.setText(calculator.getAnswer());
+        doFunction();
         calculator.serFunction(new MinusFunction());
     }
 
     public  void handleMultiply(ActionEvent e){
-        if(MonitorLabel.getText().equals("")){
-            return;
-        }
-        if(getAns){
-            getAns = false;
-        }
-        calculator.doSomething(MonitorLabel.getText());
-        MonitorLabel.setText(calculator.getAnswer());
+        doFunction();
         calculator.serFunction(new MultiplyFunction());
     }
 
     public void handleDivide(ActionEvent e){
-        if(MonitorLabel.getText().equals("")){
-            return;
-        }
-        if(getAns){
-            getAns = false;
-        }
-        calculator.doSomething(MonitorLabel.getText());
-        MonitorLabel.setText(calculator.getAnswer());
+        doFunction();
         calculator.serFunction(new DivideFunction());
     }
 
@@ -104,7 +87,7 @@ public class CalculatorController {
             return;
         }
         getAns = true;
-        calculator.doSomething(MonitorLabel.getText());
+        calculator.doFunction(MonitorLabel.getText());
         MonitorLabel.setText(calculator.getAnswer());
         calculator.serFunction(new NotFunction());
     }

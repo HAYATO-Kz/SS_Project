@@ -20,7 +20,7 @@ public class Calculator {
         this.func = func;
     }
 
-    public void doSomething(String text) {
+    public void doFunction(String text) {
         double b = Double.parseDouble(text);
         if(answer == "ANS"){
             answer = text;
