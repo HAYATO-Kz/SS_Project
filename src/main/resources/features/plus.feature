@@ -4,6 +4,6 @@ Feature:
     so that i can get sum
 
 Scenario: get summation of 2 number
-    When minus 20 with 30
+    When plus 20 with 30
     Then answer is 50
 
