@@ -3,7 +3,7 @@ package App;
 public class NotFunction implements Function {
 
     @Override
-    public double doIt(double a, double b){
+    public double execute(double a, double b){
         return a;
     }
 }

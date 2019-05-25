@@ -26,7 +26,7 @@ public class Calculator {
             answer = text;
         }else {
             double a = Double.parseDouble(answer);
-            answer = Double.toString(func.doIt(a,b));
+            answer = Double.toString(func.execute(a,b));
         }
     }
 
@@ -41,9 +41,6 @@ public class Calculator {
             if(Math.ceil(d) == d){
                 return Integer.toString((int)d);
             }
-//            if( (int) d == Math.round(d)){
-//                return Integer.toString((int)d);
-//            }
             else{
                 return  answer;
             }
@@ -52,22 +49,34 @@ public class Calculator {
         }
     }
 
-    public Momento save() {
-        return new Momento(answer);
+    public Memento save() {
+        return new Memento(answer);
     }
 
-    public String getSaved(Momento m){
-        return m.ans;
+    public String getSaved(Memento m){
+        String ans = m.getSavedAnswer();
+        try {
+            double d = Double.parseDouble(ans);
+            if(Math.ceil(d) == d){
+                return Integer.toString((int)d);
+            }
+            else{
+                return  ans;
+            }
+        } catch (NumberFormatException ne){
+            return ans;
+        }
     }
 
-
-
-
-    static class Momento{
+    static class Memento{
         private String ans;
 
-        private Momento(String ans){
+        private Memento(String ans){
             this.ans = ans;
+        }
+
+        public String getSavedAnswer(){
+            return ans;
         }
     }
 }

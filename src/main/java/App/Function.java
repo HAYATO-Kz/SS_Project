@@ -2,5 +2,5 @@ package App;
 
 public interface Function {
 
-    double doIt(double a, double b);
+    double execute(double a, double b);
 }

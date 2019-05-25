@@ -31,7 +31,7 @@ public class CalculatorController {
     @FXML private Button BtnSaveANS ;
 
     private Calculator calculator = Calculator.getInstance();
-    private Calculator.Momento m ;
+    private Calculator.Memento m ;
     private boolean getAns = false;
 
     public void doFunction(){
