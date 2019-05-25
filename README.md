@@ -9,7 +9,7 @@
 
 
 ### __Singleton Design Pattern__  ###
-make there can have only one calculator
+    make there can have only one calculator
 ![Singelton](/DesignPatternUML/Singleton.png)
 
 ### __Strategy Design Pattern__ ###
